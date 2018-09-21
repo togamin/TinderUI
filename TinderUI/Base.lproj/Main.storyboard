@@ -18,16 +18,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oHI-b0-zFt" userLabel="animal03">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oHI-b0-zFt" userLabel="animal05">
                                 <rect key="frame" x="16" y="149" width="343" height="314"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="animal03" translatesAutoresizingMaskIntoConstraints="NO" id="FY3-Xs-CcE" userLabel="animal03">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="animal05.png" translatesAutoresizingMaskIntoConstraints="NO" id="FY3-Xs-CcE" userLabel="animal05">
                                         <rect key="frame" x="46" y="32" width="250" height="250"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.94149805860000002" green="0.93405903970000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="poZ-aL-0h4" userLabel="animal04">
+                                <rect key="frame" x="16" y="149" width="343" height="314"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="animal04.png" translatesAutoresizingMaskIntoConstraints="NO" id="mhg-4H-ozj" userLabel="animal04">
+                                        <rect key="frame" x="46" y="32" width="250" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F3P-eT-h4e" userLabel="animal03">
+                                <rect key="frame" x="16" y="149" width="343" height="314"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="animal03" translatesAutoresizingMaskIntoConstraints="NO" id="Ipo-fl-nlS" userLabel="animal03">
+                                        <rect key="frame" x="46" y="32" width="250" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="85M-qV-KAR" userLabel="animal02">
                                 <rect key="frame" x="16" y="149" width="343" height="314"/>
@@ -38,7 +60,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.94149805860000002" green="0.93405903970000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HXg-jI-SjY" userLabel="animal01">
                                 <rect key="frame" x="16" y="149" width="343" height="314"/>
@@ -49,9 +71,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.94149805860000002" green="0.93405903970000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dhk-55-W6G">
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dhk-55-W6G">
                                 <rect key="frame" x="16" y="149" width="343" height="314"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -72,7 +94,9 @@
                     <connections>
                         <outlet property="animal01" destination="HXg-jI-SjY" id="wNc-CB-WDv"/>
                         <outlet property="animal02" destination="85M-qV-KAR" id="oox-pc-XRS"/>
-                        <outlet property="animal03" destination="oHI-b0-zFt" id="1pc-xs-kuZ"/>
+                        <outlet property="animal03" destination="F3P-eT-h4e" id="ibn-ll-03d"/>
+                        <outlet property="animal04" destination="poZ-aL-0h4" id="SUY-cg-nn7"/>
+                        <outlet property="animal05" destination="oHI-b0-zFt" id="EXT-Kw-lXe"/>
                         <outlet property="card" destination="Dhk-55-W6G" id="bON-U4-tj0"/>
                         <outlet property="goodbadImageView" destination="60z-Z4-EfW" id="cSS-SA-p89"/>
                     </connections>
@@ -92,5 +116,7 @@
         <image name="animal01" width="1024" height="1024"/>
         <image name="animal02" width="1024" height="1024"/>
         <image name="animal03" width="1024" height="1024"/>
+        <image name="animal04.png" width="1024" height="1024"/>
+        <image name="animal05.png" width="1024" height="1024"/>
     </resources>
 </document>

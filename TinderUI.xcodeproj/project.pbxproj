@@ -17,6 +17,8 @@
 		B72A364E215339C30099E193 /* animal01.png in Resources */ = {isa = PBXBuildFile; fileRef = B72A364D215339C30099E193 /* animal01.png */; };
 		B72A365321533C180099E193 /* animal03.png in Resources */ = {isa = PBXBuildFile; fileRef = B72A365121533C180099E193 /* animal03.png */; };
 		B72A365421533C180099E193 /* animal02.png in Resources */ = {isa = PBXBuildFile; fileRef = B72A365221533C180099E193 /* animal02.png */; };
+		B72A36D621552BB20099E193 /* animal04.png in Resources */ = {isa = PBXBuildFile; fileRef = B72A36D521552BB10099E193 /* animal04.png */; };
+		B72A36D821552BF20099E193 /* animal05.png in Resources */ = {isa = PBXBuildFile; fileRef = B72A36D721552BF20099E193 /* animal05.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		B72A364D215339C30099E193 /* animal01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animal01.png; sourceTree = "<group>"; };
 		B72A365121533C180099E193 /* animal03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animal03.png; sourceTree = "<group>"; };
 		B72A365221533C180099E193 /* animal02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animal02.png; sourceTree = "<group>"; };
+		B72A36D521552BB10099E193 /* animal04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animal04.png; sourceTree = "<group>"; };
+		B72A36D721552BF20099E193 /* animal05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animal05.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				B72A364A215330360099E193 /* Tinder02.png */,
 				B72A365221533C180099E193 /* animal02.png */,
 				B72A365121533C180099E193 /* animal03.png */,
+				B72A36D521552BB10099E193 /* animal04.png */,
+				B72A36D721552BF20099E193 /* animal05.png */,
 			);
 			path = TinderUI;
 			sourceTree = "<group>";
@@ -143,7 +149,9 @@
 				B72A365421533C180099E193 /* animal02.png in Resources */,
 				B72A364C215330370099E193 /* Tinder02.png in Resources */,
 				B72A364B215330370099E193 /* Tinder01.png in Resources */,
+				B72A36D621552BB20099E193 /* animal04.png in Resources */,
 				B72A363D21528BF50099E193 /* Main.storyboard in Resources */,
+				B72A36D821552BF20099E193 /* animal05.png in Resources */,
 				B72A365321533C180099E193 /* animal03.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

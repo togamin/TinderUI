@@ -5,6 +5,10 @@
 //  Created by Togami Yuki on 2018/09/19.
 //  Copyright © 2018 Togami Yuki. All rights reserved.
 //
+//
+//
+//
+
 
 import UIKit
 
@@ -12,8 +16,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var card: UIView!
     var cardCenter:CGPoint!//カードのセンターの位置を入れるための変数。
-    
     @IBOutlet weak var goodbadImageView: UIImageView!
+    
+    
     // Screenの高さ
     var screenHeight:CGFloat!
     // Screenの幅
@@ -23,10 +28,15 @@ class ViewController: UIViewController {
     var animalCards = [UIView]()
     var animalName:[String]!
     
-    //カード
+    var swipeCard = UIView()
+    
+    
+    //コードで実装する方法を考える必要あり。xibファイル利用してできないか?
     @IBOutlet weak var animal01: UIView!
     @IBOutlet weak var animal02: UIView!
     @IBOutlet weak var animal03: UIView!
+    @IBOutlet weak var animal04: UIView!
+    @IBOutlet weak var animal05: UIView!
     //カードを決めるための変数
     var selectedCount = 0
     //Likeされたカードの情報を入れる変数
@@ -43,9 +53,9 @@ class ViewController: UIViewController {
         screenWidth = screenSize.width
         screenHeight = screenSize.height
 /*-----------------------------------------------------*/
-        //カードの配列を作成
-        animalCards = [animal01,animal02,animal03]
-        animalName = ["ペンギン","ハリネズミ","ネコ"]
+        //カードの配列を作成.
+        animalCards = [animal01,animal02,animal03,animal04,animal05]
+        animalName = ["ペンギン","ハリネズミ","ネコ","ネコ2","ペンギン2"]
 /*-----------------------------------------------------*/
     }
 
@@ -57,28 +67,27 @@ class ViewController: UIViewController {
         let swipeCard = sender.view!
         //どれくらいスワイプしたかの位置情報。
         let point = sender.translation(in:view)
-        
-        
-        //スワイプした分カードを動かす。
-        swipeCard.center = CGPoint(x: swipeCard.center.x + point.x*0.1,y:swipeCard.center.y)
-        
-        animalCards[selectedCount].center = CGPoint(x: swipeCard.center.x + point.x*0.1,y:swipeCard.center.y)
-
-        
-        
-        
-        //カードのセンターのx座標.カードの角度を変える。
-        //この値がプラスなら、右マイナスなら左にスワイプされたことになる。
-        //45°のラジアン表記は0.785
+        //スワイプ後のx座標とスワイプ前のx座標の差。プラスなら右、マイナスなら左に移動したことになる。
         let cardCenterX = swipeCard.center.x - view.center.x
         
+        
+        
+        
+        //基本となるカードスワイプした分カードを動かす。
+        swipeCard.center = CGPoint(x: swipeCard.center.x + point.x*0.1,y:swipeCard.center.y)
         swipeCard.transform = CGAffineTransform(rotationAngle: cardCenterX/(view.frame.width/2) * -0.785)
         
+        
+        
+        
+        //アニマルカード
+        animalCards[selectedCount].center = CGPoint(x: swipeCard.center.x + point.x*0.1,y:swipeCard.center.y)
         animalCards[selectedCount].transform = CGAffineTransform(rotationAngle: cardCenterX/(view.frame.width/2) * -0.785)
         
         
         
         
+
         //スワイプさせる方向のよって表示させる画像を変える。
         if cardCenterX > 0 {
             goodbadImageView.image = #imageLiteral(resourceName: "Tinder01")
@@ -90,7 +99,10 @@ class ViewController: UIViewController {
         
         
         
+        
+        
         //スワイプの指が離れたときの処理。
+        //飛ばした後に配列に新しいデータを追加する処理をつけ加えれば、永遠にスワイプできる。
         if sender.state == UIGestureRecognizerState.ended{
             //カードが大きく左にスワイプされた時。
             if swipeCard.center.x < self.screenWidth/5 {
@@ -107,9 +119,8 @@ class ViewController: UIViewController {
                     }else{
                         self.selectedCount += 1
                     }
-                    self.goodbadImageView.alpha = 0
                 })
-                return//処理が呼ばれた後に、gesture関数から抜け出す。
+                self.goodbadImageView.alpha = 0
             }else if swipeCard.center.x > self.screenWidth - self.screenWidth/5 {
                 UIView.animate(withDuration: 0.2, animations: {
                     //swipeCard.center = CGPoint(x: self.cardCenter.x + self.screenWidth*2,y:self.cardCenter.y)
@@ -127,20 +138,18 @@ class ViewController: UIViewController {
                     }else{
                         self.selectedCount += 1
                     }
-                    self.goodbadImageView.alpha = 0
-                    
                 })
-                return
-            }
-            //指が離れた時にカードを真ん中に戻す処理を書く。
-            UIView.animate(withDuration: 0.2, animations: {
-                swipeCard.center = CGPoint(x: self.cardCenter.x,y:self.cardCenter.y)
-                swipeCard.transform = .identity
                 self.goodbadImageView.alpha = 0
-                
-                self.animalCards[self.selectedCount].center = CGPoint(x: self.cardCenter.x,y:self.cardCenter.y)
-                self.animalCards[self.selectedCount].transform = .identity
-            })
+            }else{
+                //指が離れた時にカードを真ん中に戻す処理を書く。
+                UIView.animate(withDuration: 0.2, animations: {
+                    swipeCard.center = CGPoint(x: self.cardCenter.x,y:self.cardCenter.y)
+                    swipeCard.transform = .identity
+                    self.goodbadImageView.alpha = 0
+                    self.animalCards[self.selectedCount].center = CGPoint(x: self.cardCenter.x,y:self.cardCenter.y)
+                    self.animalCards[self.selectedCount].transform = .identity
+                })
+            }
         }
     }
     
