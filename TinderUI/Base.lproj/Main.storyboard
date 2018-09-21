@@ -18,10 +18,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oHI-b0-zFt" userLabel="animal03">
+                                <rect key="frame" x="16" y="149" width="343" height="314"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="animal03" translatesAutoresizingMaskIntoConstraints="NO" id="FY3-Xs-CcE" userLabel="animal03">
+                                        <rect key="frame" x="46" y="32" width="250" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94149805860000002" green="0.93405903970000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="85M-qV-KAR" userLabel="animal02">
+                                <rect key="frame" x="16" y="149" width="343" height="314"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="animal02" translatesAutoresizingMaskIntoConstraints="NO" id="03W-Xk-yAB" userLabel="animal02">
+                                        <rect key="frame" x="46" y="32" width="250" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94149805860000002" green="0.93405903970000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HXg-jI-SjY" userLabel="animal01">
+                                <rect key="frame" x="16" y="149" width="343" height="314"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="animal01" translatesAutoresizingMaskIntoConstraints="NO" id="gXJ-PA-cgu">
+                                        <rect key="frame" x="46" y="32" width="250" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94149805860000002" green="0.93405903970000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dhk-55-W6G">
                                 <rect key="frame" x="16" y="149" width="343" height="314"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94149805860000002" green="0.93405903970000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tinder01" translatesAutoresizingMaskIntoConstraints="NO" id="60z-Z4-EfW">
+                                        <rect key="frame" x="107" y="93" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="qhL-8w-dmE" appends="YES" id="zbu-gS-glY"/>
@@ -32,7 +70,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="animal01" destination="HXg-jI-SjY" id="wNc-CB-WDv"/>
+                        <outlet property="animal02" destination="85M-qV-KAR" id="oox-pc-XRS"/>
+                        <outlet property="animal03" destination="oHI-b0-zFt" id="1pc-xs-kuZ"/>
                         <outlet property="card" destination="Dhk-55-W6G" id="bON-U4-tj0"/>
+                        <outlet property="goodbadImageView" destination="60z-Z4-EfW" id="cSS-SA-p89"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -45,4 +87,10 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Tinder01" width="256" height="256"/>
+        <image name="animal01" width="1024" height="1024"/>
+        <image name="animal02" width="1024" height="1024"/>
+        <image name="animal03" width="1024" height="1024"/>
+    </resources>
 </document>

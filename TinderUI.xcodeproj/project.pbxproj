@@ -12,6 +12,11 @@
 		B72A363D21528BF50099E193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72A363B21528BF50099E193 /* Main.storyboard */; };
 		B72A363F21528BF80099E193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B72A363E21528BF80099E193 /* Assets.xcassets */; };
 		B72A364221528BF80099E193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72A364021528BF80099E193 /* LaunchScreen.storyboard */; };
+		B72A364B215330370099E193 /* Tinder01.png in Resources */ = {isa = PBXBuildFile; fileRef = B72A3649215330360099E193 /* Tinder01.png */; };
+		B72A364C215330370099E193 /* Tinder02.png in Resources */ = {isa = PBXBuildFile; fileRef = B72A364A215330360099E193 /* Tinder02.png */; };
+		B72A364E215339C30099E193 /* animal01.png in Resources */ = {isa = PBXBuildFile; fileRef = B72A364D215339C30099E193 /* animal01.png */; };
+		B72A365321533C180099E193 /* animal03.png in Resources */ = {isa = PBXBuildFile; fileRef = B72A365121533C180099E193 /* animal03.png */; };
+		B72A365421533C180099E193 /* animal02.png in Resources */ = {isa = PBXBuildFile; fileRef = B72A365221533C180099E193 /* animal02.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		B72A363E21528BF80099E193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B72A364121528BF80099E193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B72A364321528BF80099E193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B72A3649215330360099E193 /* Tinder01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tinder01.png; sourceTree = "<group>"; };
+		B72A364A215330360099E193 /* Tinder02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tinder02.png; sourceTree = "<group>"; };
+		B72A364D215339C30099E193 /* animal01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animal01.png; sourceTree = "<group>"; };
+		B72A365121533C180099E193 /* animal03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animal03.png; sourceTree = "<group>"; };
+		B72A365221533C180099E193 /* animal02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animal02.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				B72A363E21528BF80099E193 /* Assets.xcassets */,
 				B72A364021528BF80099E193 /* LaunchScreen.storyboard */,
 				B72A364321528BF80099E193 /* Info.plist */,
+				B72A364D215339C30099E193 /* animal01.png */,
+				B72A3649215330360099E193 /* Tinder01.png */,
+				B72A364A215330360099E193 /* Tinder02.png */,
+				B72A365221533C180099E193 /* animal02.png */,
+				B72A365121533C180099E193 /* animal03.png */,
 			);
 			path = TinderUI;
 			sourceTree = "<group>";
@@ -122,9 +137,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72A364E215339C30099E193 /* animal01.png in Resources */,
 				B72A364221528BF80099E193 /* LaunchScreen.storyboard in Resources */,
 				B72A363F21528BF80099E193 /* Assets.xcassets in Resources */,
+				B72A365421533C180099E193 /* animal02.png in Resources */,
+				B72A364C215330370099E193 /* Tinder02.png in Resources */,
+				B72A364B215330370099E193 /* Tinder01.png in Resources */,
 				B72A363D21528BF50099E193 /* Main.storyboard in Resources */,
+				B72A365321533C180099E193 /* animal03.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
